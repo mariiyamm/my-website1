@@ -1,0 +1,143 @@
+body{
+    background-color: #F2EFDF;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3em;
+    padding-block: 1em;
+    margin-right: 23em;
+    margin-left: 15em;
+    background-color: #59402A;
+    color: white;
+}
+
+button{
+    background-color: #8C503A;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #59402A;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#header{
+    display: flex;
+    gap: 3em;
+}
+
+#side{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 23em;
+    margin-left: 15em;
+    
+}
+#side1{
+    background-color: #D9B88F;
+    padding-inline: 3em;
+    padding-block: 2em;
+}
+
+#viktig{
+    margin-top: 1em;
+    background-color: #8C503A;
+    margin-right: 1em;
+    padding: 1em;
+    color: white;
+}
+
+#other{
+    background-color: #401D10;
+    margin-right: 1em;
+    padding: 1em;
+    margin-block: 1em;
+    color: #D9B88F; 
+}
+
+a{
+    color: #efd5b5;
+}
+
+#form{
+    background-color: #183459;
+    margin-right: 1em;
+    padding: 1em;
+    color: white;
+}
+
+form input, form textarea{
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    background-color: #8C503A;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #401D10;
+}
+
+h3, h4 {
+    margin-bottom: 0.5em;
+}
+p, li {
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        margin-inline: 0em;
+        font-size: 9pt;
+        padding-inline: 1em;
+    }
+    #side{
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        margin-inline: 0em;
+    }
+
+    #side1{
+        padding: 1em;
+    }
+    #table{
+        display:flex;
+        flex-direction: row-reverse;
+        order:1;
+    }
+    #viktig{
+        margin-right: 0em;
+    }
+    #other{
+        margin-right: 0em;
+    }
+    #form{
+        margin-right: 0em;
+    }
+}
